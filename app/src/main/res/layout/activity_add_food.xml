@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_200"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".Add_Food">
+
+    <EditText
+        android:id="@+id/food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_txt"
+        android:gravity="start"
+        android:hint="@string/taom_nomi"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/mahsulot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mahsulot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_txt"
+        android:gravity="start"
+        android:hint="@string/kerakli_mahsulotlar"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tayorlash"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/food_name" />
+
+    <EditText
+        android:id="@+id/tayorlash"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_txt"
+        android:gravity="start"
+        android:hint="@string/taom_tayorlash"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_save"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mahsulot" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tayorlash"
+        app:layout_constraintWidth_percent="0.35" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
